@@ -8,8 +8,14 @@
     "node": "14.x"
   },
   "scripts": {
+<<<<<<< HEAD
     "start": "nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
+=======
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build"
+>>>>>>> 543bdafb78de2c6d151218ddc046e6f3f161223b
   },
   "keywords": [],
   "author": "",
