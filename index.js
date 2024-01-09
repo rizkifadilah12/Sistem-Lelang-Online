@@ -22,10 +22,9 @@ const store = new sessionStore({
   db: db,
 });
 
-// (async()=>{
-//     await db.sync();
+// (async () => {
+//   await db.sync();
 // })();
-
 app.use(
   session({
     secret: process.env.SESS_SECRET,
@@ -40,7 +39,7 @@ app.use(
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:3000",
+    origin: ["https://www.example.com/", "http://localhost:3000"],
   })
 );
 app.use(express.json());

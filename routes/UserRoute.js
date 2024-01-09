@@ -15,7 +15,7 @@ const router = express.Router();
 
 router.get('/users', verifyUser, adminOnly, getUsers);
 router.get('/users/:id', verifyUser, adminOnly, getUserById);
-router.post('/users', verifyUser, adminOnly, createUser);
+router.post("/users", createUser);
 router.patch('/users/:id', verifyUser, adminOnly, updateUser);
 router.patch('/users/block/:id', verifyUser, blokUser);
 router.patch('/changepass/:id',verifyUser,updatePassword)

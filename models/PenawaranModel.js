@@ -1,5 +1,5 @@
 import { Sequelize } from "sequelize";
-import db from "../Config/Database.js";
+import db from "../config/Database.js";
 import Masyarakat from "./MasyarakatModel.js"; 
 import Lelang from "./LelangModel.js";
 

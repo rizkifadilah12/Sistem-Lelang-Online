@@ -78,7 +78,6 @@ export const getForLelang = async(req, res) =>{
   SELECT *
   FROM lelang_berlangsung
           `;
-// Execute the SQL query to select data from the view
 db
 .query(selectViewSql, { type: sequelize.QueryTypes.SELECT })
 .then((viewData) => {

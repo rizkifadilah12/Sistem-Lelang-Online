@@ -7,6 +7,7 @@ export const getUsers = async (req, res) => {
       attributes: ["id", "uuid", "nip", "name", "email", "role", "status"],
     });
     res.status(200).json(response);
+
   } catch (error) {
     res.status(500).json({ msg: error.message });
   }
